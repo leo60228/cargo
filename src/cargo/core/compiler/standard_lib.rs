@@ -88,7 +88,7 @@ pub fn resolve_std<'cfg>(
         })
         .collect::<CargoResult<Vec<_>>>()?;
     let source_path = SourceId::for_git(
-        &url::Url::parse("https://github.com/mrk-its/compiler-builtins").unwrap(),
+        &url::Url::parse("https://github.com/leo60228/compiler-builtins").unwrap(),
         GitReference::Branch("mos_target".to_string()),
     )?;
     let dep = Dependency::parse("compiler_builtins", None, source_path)?;
